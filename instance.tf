@@ -12,8 +12,8 @@ resource "google_compute_instance" "tailscale" {
   boot_disk {
     initialize_params {
       type  = "pd-standard"
-      size  = 40
-      image = "ubuntu-2004-lts"
+      size  = 20
+      image = "ubuntu-2204-lts"
     }
   }
 
