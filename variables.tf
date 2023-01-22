@@ -36,12 +36,6 @@ variable "hostname" {
   default     = "tailscale-egress"
 }
 
-variable "preemptible" {
-  description = "Use / do not use a preemptible GGE instance (Default: false)"
-  type        = bool
-  default     = false
-}
-
 variable "instance_network_tags" {
   description = "List of network tags to attach to the instance (Default: [])"
   type        = list(string)
